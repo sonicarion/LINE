@@ -6,7 +6,7 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
-header("Location: http://sonictest.somee.com/api.aspx?json="+ $events); /* Redirect browser */
+header("Location: http://sonictest.somee.com/api.aspx?json="); /* Redirect browser */
 exit();
 
 echo "OK";
