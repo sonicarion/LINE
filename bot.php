@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'Sonic test'
+				'text' => $_SERVER['REMOTE_ADDR']
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
